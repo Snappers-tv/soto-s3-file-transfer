@@ -25,7 +25,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "SotoS3FileTransfer", dependencies: [
-            .product(name: "SotoS3", package: "soto"),
+       
             .product(name: "Logging", package: "swift-log"),
         ]),
         .testTarget(name: "SotoS3FileTransferTests", dependencies: ["SotoS3FileTransfer"]),
